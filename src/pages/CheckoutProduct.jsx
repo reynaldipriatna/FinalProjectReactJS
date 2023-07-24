@@ -1,5 +1,5 @@
 const CheckoutProduct = () => {
-  return <div>Payment</div>;
+  return <div>Checkout</div>;
 };
 
 export default CheckoutProduct;

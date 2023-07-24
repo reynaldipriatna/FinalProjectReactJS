@@ -18,3 +18,58 @@
   font-family: BeVietnamPro;
   src: url("assets/fonts/BeVietnamPro.ttf") format("opentype");
 }
+
+:root {
+  --primary: #152a46;
+  --secondary: #eff4fa;
+  --white: #ffffff;
+  --blue: #2a61a8;
+  --yellow: #ffcd29;
+  --green: #0acf83;
+  --red: #ff6161;
+  --black: #000000;
+  --grey: #808080;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.navbar-item {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.btn-login {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  width: 148px;
+  height: 48px;
+  border-radius: 50px;
+  background-color: var(--red);
+}

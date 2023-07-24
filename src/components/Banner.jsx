@@ -6,4 +6,4 @@ const Banner = () => {
   );
 };
 
-export default Footer;
+export default Banner;

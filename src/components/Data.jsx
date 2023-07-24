@@ -2,17 +2,20 @@ export const navMenu = [
   {
     id: "program",
     title: "Program",
-    link: "#/program",
+    link: "#program",
+    target: "",
   },
   {
     id: "ilmu",
     title: "Bidang Ilmu",
-    link: "#/bidang-ilmu",
+    link: "#bidang-ilmu",
+    target: "",
   },
   {
     id: "tentang",
     title: "Tentang edspert",
     link: "https://edspert.id/",
+    target: "_blank",
   },
 ];
 
