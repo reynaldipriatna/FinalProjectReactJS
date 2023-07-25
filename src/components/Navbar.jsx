@@ -1,4 +1,4 @@
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo-white.png";
 import IconMenu from "../assets/icons/menu.svg";
 import IconClose from "../assets/icons/close.svg";
 import { useState } from "react";
@@ -20,7 +20,7 @@ const Navbar = () => {
           onClick={() => navigate("/")}
         />
 
-        <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+        <ul className="list-none md:flex hidden justify-end items-center flex-1">
           {navMenu.map((item) => (
             <li key={item.id} className="mr-10">
               <a href={item.link} target={item.target} className="navbar-item">
@@ -33,7 +33,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <img
             src={
               toggle
@@ -50,7 +50,7 @@ const Navbar = () => {
             className={
               !toggle
                 ? "hidden"
-                : "flex absolute top-14 mx-3 my-2 min-w-[140px] rounded-xl"
+                : "flex absolute top-14 mx-3 my-2 min-w-[140px] rounded-xl bg-[#255391] py-0 px-4"
             }
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col">

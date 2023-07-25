@@ -1,3 +1,7 @@
+import IconAddress from "../assets/icons/address.svg";
+import IconPhone from "../assets/icons/phone.svg";
+import IconMail from "../assets/icons/mail.svg";
+
 export const navMenu = [
   {
     id: "program",
@@ -21,21 +25,27 @@ export const navMenu = [
 
 export const footerInfo = [
   {
-    address:
+    id: "address",
+    title:
       "Jl. Watugede No.58, Wonorejo, Sariharjo, Kec. Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581",
+    icon: IconAddress,
   },
   {
-    phone: "+62-821-2382-4483",
+    id: "phone",
+    title: "+62-821-2382-4483",
+    icon: IconPhone,
   },
   {
-    email: "halo@widyaedu.com",
+    id: "mail",
+    title: "halo@widyaedu.com",
+    icon: IconMail,
   },
 ];
 
 export const footerMenu = [
   {
     title: "Program",
-    links: [
+    menu: [
       {
         id: "online-courses",
         name: "Online Courses",
@@ -50,10 +60,9 @@ export const footerMenu = [
       },
     ],
   },
-
   {
     title: "Bidang Ilmu",
-    links: [
+    menu: [
       {
         id: "digital-marketing",
         name: "Digital marketing",
@@ -72,10 +81,9 @@ export const footerMenu = [
       },
     ],
   },
-
   {
     title: "Tentang edspert",
-    links: [
+    menu: [
       {
         id: "bantuan",
         name: "Bantuan",

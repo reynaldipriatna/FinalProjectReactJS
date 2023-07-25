@@ -29,7 +29,7 @@
   --green: #0acf83;
   --red: #ff6161;
   --black: #000000;
-  --grey: #808080;
+  --grey: #a3a3a3;
 }
 
 .bg-primary {
@@ -46,6 +46,10 @@
 
 .bg-red {
   background-color: var(--red);
+}
+
+.text-primary {
+  color: var(--primary);
 }
 
 .text-white {
@@ -89,4 +93,36 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.footer-info {
+  font-family: "BeVietnam";
+  color: var(--grey);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-title-menu {
+  font-family: "BeVietnam";
+  color: var(--black);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-list-menu {
+  font-family: "BeVietnam";
+  color: var(--grey);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer {
+  font-family: "BeVietnam";
+  color: var(--grey);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23.38px;
 }
