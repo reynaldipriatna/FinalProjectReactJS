@@ -23,6 +23,7 @@
   --primary: #152a46;
   --secondary: #eff4fa;
   --white: #ffffff;
+  --offwhite: #fcfcfc;
   --blue: #2a61a8;
   --yellow: #ffcd29;
   --green: #0acf83;
@@ -72,4 +73,20 @@
   height: 48px;
   border-radius: 50px;
   background-color: var(--red);
+}
+
+.banner-heading {
+  font-family: "BeVietnamPro";
+  color: var(--white);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.banner-paragraph {
+  font-family: "BeVietnam";
+  color: var(--offwhite);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
