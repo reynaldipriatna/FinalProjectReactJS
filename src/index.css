@@ -131,6 +131,7 @@
   font-family: "Mulish";
   border-radius: 20px;
   box-shadow: 3px 3px 10px #999;
+  background-color: var(--white);
 }
 
 .card-program {
@@ -195,4 +196,50 @@
   line-height: 20px;
   text-decoration: line-through;
   color: var(--grey);
+}
+
+.pagination {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--grey);
+}
+
+.pagination:hover {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  background: #197bff;
+  border-radius: 10px;
+}
+
+.pagination-next {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.pagination-next:hover {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  background: #197bff;
+  border-radius: 10px;
+}
+
+.pagination-aktif {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--white);
+  background: #197bff;
+  border-radius: 10px;
 }

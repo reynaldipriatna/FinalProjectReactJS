@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
+import Pagination from "../components/Pagination";
 import Footer from "../components/Footer";
 
 const ProductCatalog = () => (
@@ -19,6 +20,7 @@ const ProductCatalog = () => (
     <div className="flex justify-center items-center bg-secondary">
       <div className="container">
         <Card />
+        <Pagination />
       </div>
     </div>
 
