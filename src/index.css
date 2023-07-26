@@ -126,3 +126,73 @@
   font-size: 16px;
   line-height: 23.38px;
 }
+
+.card {
+  font-family: "Mulish";
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #999;
+}
+
+.card-program {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  color: var(--yellow);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.card-description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.card-content {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  color: var(--black);
+}
+
+.card-sub-content {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 25px;
+  color: var(--black);
+}
+
+.card-sub-item {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--grey);
+}
+
+.card-item {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+  color: var(--green);
+}
+
+.card-price-real {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: line-through;
+  color: var(--grey);
+}

@@ -11,7 +11,7 @@ const Footer = () => {
         <img
           src={Logo}
           alt="Edspert Logo"
-          className="h-[30px] items-center cursor-pointer my-8"
+          className="h-[30px] items-center cursor-pointer my-6"
           onClick={() => navigate("/")}
         />
         {footerInfo.map((item) => (
@@ -23,8 +23,8 @@ const Footer = () => {
       </div>
 
       <div className="w-full flex flex-col md:flex-row justify-between flex-wrap">
-        {footerMenu.map((item, index) => (
-          <div className="flex flex-col" key={index}>
+        {footerMenu.map((item) => (
+          <div className="flex flex-col" key={item.title}>
             <h4 className="footer-title-menu mb-4 mt-6 md:mt-0 text-center md:text-left">
               {item.title}
             </h4>
