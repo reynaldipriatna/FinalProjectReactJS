@@ -1,12 +1,25 @@
+import React from "react";
 import CardCharacter from "../assets/images/card-character.png";
 import { cardItems } from "./Data";
+import { useNavigate } from "react-router";
+import slugify from "react-slugify";
 
 const Card = () => {
+  const navigate = useNavigate();
+
+  const urlDetail = (program, title) => {
+    navigate("/detail/" + slugify(program) + "/" + slugify(title));
+  };
+
   return (
     <selection className="flex my-[40px]">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 md:gap-6 xl:gap-10 pt-[16px]">
         {cardItems.map((item) => (
-          <div className="card">
+          <div
+            className="card cursor-pointer hover:opacity-80"
+            key={item.id}
+            onClick={() => urlDetail(item.program, item.title)}
+          >
             <div className="bg-primary px-8 pt-4 rounded-t-[20px] flex flex-row items-center">
               <img
                 src={CardCharacter}

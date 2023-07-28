@@ -13,7 +13,7 @@ const routerList = createBrowserRouter([
         element: <ProductCatalog />,
       },
       {
-        path: "detail/:id",
+        path: "detail/:program/:title",
         element: <DetailProduct />,
       },
       {

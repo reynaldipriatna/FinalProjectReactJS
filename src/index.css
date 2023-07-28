@@ -243,3 +243,23 @@
   background: #197bff;
   border-radius: 10px;
 }
+
+.joinus-paragraph {
+  font-family: "BeVietnamPro";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 44px;
+  color: var(--white);
+}
+
+.joinus-button {
+  font-family: "BeVietnamPro";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--white);
+  background: var(--yellow);
+  border-radius: 50px;
+  height: 53px;
+  width: 262px;
+}
