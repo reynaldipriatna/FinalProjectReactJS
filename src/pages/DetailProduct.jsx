@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
-import Banner from "../components/Banner";
+import Header from "../components/Header";
+import Product from "../components/Product";
 import JoinUs from "../components/JoinUs";
 import Footer from "../components/Footer";
 
@@ -12,12 +13,14 @@ const DetailProduct = () => (
     </div>
     <div className="flex justify-center items-center bg-primary">
       <div className="container">
-        <Banner />
+        <Header />
       </div>
     </div>
 
-    <div className="flex justify-center items-center bg-secondary h-[300px]">
-      <div className="container"></div>
+    <div className="flex justify-center items-center bg-secondary">
+      <div className="container">
+        <Product />
+      </div>
     </div>
 
     <div className="flex justify-center items-center bg-primary">

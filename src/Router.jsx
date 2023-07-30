@@ -3,6 +3,8 @@ import ProductCatalog from "./pages/ProductCatalog";
 import DetailProduct from "./pages/DetailProduct";
 import CheckoutProduct from "./pages/CheckoutProduct";
 import Payment from "./pages/Payment";
+import { Provider } from "react-redux";
+import store from "./store";
 
 const routerList = createBrowserRouter([
   {
@@ -13,7 +15,7 @@ const routerList = createBrowserRouter([
         element: <ProductCatalog />,
       },
       {
-        path: "detail/:program/:title",
+        path: "detail/:id/",
         element: <DetailProduct />,
       },
       {
@@ -29,7 +31,11 @@ const routerList = createBrowserRouter([
 ]);
 
 const Router = () => {
-  return <RouterProvider router={routerList} />;
+  return (
+    <Provider store={store}>
+      <RouterProvider router={routerList} />
+    </Provider>
+  );
 };
 
 export default Router;

@@ -263,3 +263,110 @@
   height: 53px;
   width: 262px;
 }
+
+.detail-heading {
+  font-family: "BeVietnamPro";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--white);
+}
+
+.detail-desc-heading {
+  font-family: "BeVietnamPro";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 60px;
+  color: var(--white);
+}
+
+.detail-sub-heading {
+  font-family: "BeVietnam";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.mentor-name {
+  font-family: "BeVietnam";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.mentor-job {
+  font-family: "BeVietnam";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.detail-sub-content {
+  font-family: "BeVietnamPro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--black);
+}
+
+.detail-sub-content-active {
+  font-family: "BeVietnamPro";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #197bff;
+}
+
+.btn-cart {
+  font-family: "BeVietnamPro";
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--yellow);
+}
+
+.detail-price {
+  font-family: "BeVietnamPro";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--red);
+}
+
+.detail-price-real {
+  font-family: "BeVietnamPro";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  text-decoration: line-through;
+  color: var(--grey);
+}
+
+.detail-materi-heading {
+  font-family: "BeVietnamPro";
+  color: #2b3e58;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.detail-materi-sub-heading {
+  font-family: "BeVietnamPro";
+  color: var(--black);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.detail-materi-desc {
+  font-family: "BeVietnamPro";
+  color: #2b3e58;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
