@@ -13,7 +13,6 @@ const Checkout = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { entity } = useSelector((state) => state.product);
-  const { entities } = useSelector((state) => state.cart);
   useEffect(() => {
     const fetchProduct = async () => {
       await dispatch(getProduct(id));
@@ -38,13 +37,13 @@ const Checkout = () => {
         <h2 className="checkout-heading p-5 mb-8">Checkout</h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="card px-8">
           <div className="flex flex-col">
             <h3 className="checkout-sub-heading my-4 mt-8">
               Pilih Metode Pembayaran
             </h3>
-            <h6 className="checkout-title">
+            <h6 className="checkout-pay-title">
               Bank Transfer (verifikasi manual)
             </h6>
             <p className="checkout-desc my-1">
@@ -83,7 +82,7 @@ const Checkout = () => {
               </div>
             </div>
 
-            <h6 className="checkout-title mt-6">
+            <h6 className="checkout-pay-title mt-6">
               Virtual Account (verifikasi otomatis)
             </h6>
             <p className="checkout-desc my-1">
@@ -130,6 +129,88 @@ const Checkout = () => {
             <h3 className="checkout-sub-heading my-4 mt-8">
               Ringkasan Pesanan
             </h3>
+            <div className="flex flex-row gap-3">
+              <div className="bg-primary w-[120px] rounded-[5px] flex justify-center">
+                <img src={Character} alt="Person" />
+              </div>
+              <div className="">
+                <h3 className="checkout-title">{entity.title}</h3>
+                <h4 className="checkout-sub-title">{entity.description}</h4>
+                <div className="flex flex-row items-center mt-3">
+                  <p className="card-sub-item flex-initial w-12">Batch</p>
+                  <p className="card-item">{entity.batch}</p>
+                </div>
+                <div className="flex flex-row items-center mt-1">
+                  <p className="card-sub-item flex-initial w-12">Mentor</p>
+                  <p className="card-item">
+                    {entity.mentor.map((itemMentor, index) =>
+                      entity.mentor.length - 1 == index ? (
+                        <>{itemMentor.name}</>
+                      ) : (
+                        <>{itemMentor.name}, </>
+                      )
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="my-3 mt-6">
+              <h4 className="checkout-item-title">Kode Promo</h4>
+              <div className="flex flex-row my-3 gap-3 items-center">
+                <input
+                  type="text"
+                  className="w-[80%] h-[50px] border-[1px] p-3 rounded-l-[4px]"
+                  placeholder="Masukkan Kode Promo"
+                />
+                <button className="btn-promo-checkout justify-center h-[50px] w-[20%]">
+                  Terapkan
+                </button>
+              </div>
+            </div>
+            <div className="my-2 mt-2">
+              <h4 className="checkout-item-title mb-2">Metode Pembayaran</h4>
+              <p className="checkout-pay-title">
+                Bank Transfer (verifikasi manual)-Mandiri
+              </p>
+            </div>
+            <div className="my-2 mt-2">
+              <h4 className="checkout-item-title mb-3">Ringkasan Pembayaran</h4>
+              <div className="flex justify-between my-3">
+                <p className="checkout-list-item">Harga Kelas</p>
+                <p className="checkout-list-item">{entity.price}</p>
+              </div>
+              <div className="flex justify-between my-3">
+                <p className="checkout-list-item">Potongan</p>
+                <p className="checkout-list-item">-</p>
+              </div>
+              <div className="flex justify-between my-3">
+                <p className="checkout-list-item">Promo</p>
+                <p className="checkout-list-item">-</p>
+              </div>
+              <div className="flex justify-between my-3">
+                <p className="checkout-list-item">Kode Unit</p>
+                <p className="checkout-list-item">-</p>
+              </div>
+              <hr className="my-4" />
+              <div className="flex justify-between my-3">
+                <p className="checkout-item-title">Total Pembayaran</p>
+                <p className="checkout-item-title">{entity.price}</p>
+              </div>
+
+              <p className="checkout-desc-card">
+                Dengan menekan tombol <b>Bayar</b> kamu telah menyetujui syarat
+                dan ketentuan yang berlaku, silahkan baca kembali{" "}
+                <a href="#" style={{ color: "#1097E7" }}>
+                  Syarat & ketentuan
+                </a>{" "}
+                yang berlaku.
+              </p>
+            </div>
+            <div className="flex justify-between my-3 mt-8">
+              <p className="checkout-pay-title">&#8249; Batalkan</p>
+              <button className="btn-bayar">Bayar</button>
+            </div>
+            <div className="mb-10"></div>
           </div>
         </div>
       </div>
