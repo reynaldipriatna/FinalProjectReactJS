@@ -4,11 +4,13 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProduct } from "../store/product/action";
+import { addItem } from "../store/cart/slice";
 import Icon from "../assets/icons/checklist.svg";
 
 const Product = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { entity } = useSelector((state) => state.product);
 
   useEffect(() => {
@@ -18,6 +20,11 @@ const Product = () => {
 
     fetchProduct();
   }, [dispatch, id]);
+
+  const checkoutPage = () => {
+    navigate("/checkout");
+  };
+
   return (
     <section className="flex mt-[40px] mb-[100px]">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
@@ -35,7 +42,15 @@ const Product = () => {
               <p className="detail-price-real mx-4">{entity.pricereal}</p>
               <p className="detail-price mx-4">{entity.price}</p>
             </div>
-            <button className="btn-cart mx-5 my-5">Daftar Kelas</button>
+            <button
+              className="btn-cart mx-5 my-5"
+              onClick={() => {
+                dispatch(addItem(entity));
+                checkoutPage(id);
+              }}
+            >
+              Daftar Kelas
+            </button>
           </div>
         </div>
         <div className="col-span-3">

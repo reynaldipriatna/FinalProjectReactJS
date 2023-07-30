@@ -370,3 +370,59 @@
   font-weight: 400;
   line-height: 20px;
 }
+
+.breadcrumb-active {
+  font-family: "Mulish";
+  color: #1097e7;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.breadcrumb {
+  font-family: "Mulish";
+  color: #6d7175;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.checkout-heading {
+  font-family: "Mulish";
+  color: #2b3e58;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.checkout-sub-heading {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.checkout-title {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.checkout-desc {
+  font-family: "Mulish";
+  color: #6d7175;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.checkout-item {
+  font-family: "Mulish";
+  color: #131313;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
